@@ -14,15 +14,18 @@
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/3cbbd84a75.js" crossorigin="anonymous"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <script src="./static/js/index.js"></script>
 </head>
 
@@ -32,49 +35,50 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Close the Optical Sensing Domain Gap by Physics-Grounded Active Stereo Sensor Simulation</h1>
+          <h1 class="title is-2 publication-title">Close the Optical Sensing Domain Gap by Physics-Grounded Active Stereo Sensor Simulation</h1>
+          <p>In submission to IEEE Transactions on Robotics (T-RO), currently under review</p>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Xiaoshuai Zhang*<sup>1</sup>,
+              <a href="https://cseweb.ucsd.edu/~haosu/lab/group.html">Xiaoshuai Zhang</a>*<sup>1</sup>,
             </span>
             <span class="author-block">
-              Rui Chen*<sup>2</sup>,
+              <a href="https://cray695.wixsite.com/mysite">Rui Chen</a>*<sup>2</sup>,
             </span>
             <span class="author-block">
-              Ang Li**<sup>1</sup>,
+              <a href="https://angli66.github.io">Ang Li</a>**<sup>1</sup>,
             </span>
             <span class="author-block">
-              Fanbo Xiang**<sup>1</sup>,
+              <a href="https://www.fbxiang.com/">Fanbo Xiang</a>**<sup>1</sup>,
             </span>
             <span class="author-block">
-              Yuzhe Qin**<sup>1</sup>,
+              <a href="https://yzqin.github.io/">Yuzhe Qin</a>**<sup>1</sup>,
             </span>
             <span class="author-block">
-              Jiayuan Gu**<sup>1</sup>,
+              <a href="https://cseweb.ucsd.edu/~jigu/">Jiayuan Gu</a>**<sup>1</sup>,
             </span>
             <span class="author-block">
-              Zhan Ling**<sup>1</sup>,
+              <a href="https://cseweb.ucsd.edu/~haosu/lab/group.html">Zhan Ling</a>**<sup>1</sup>,
             </span>
             <span class="author-block">
-              Minghua Liu**<sup>1</sup>,
+              <a href="https://cseweb.ucsd.edu/~mil070/">Minghua Liu</a>**<sup>1</sup>,
             </span>
             <span class="author-block">
-              Peiyu Zeng**<sup>2</sup>,
+              <a href="https://angli66.github.io/active-sensor-sim/">Peiyu Zeng</a>**<sup>2</sup>,
             </span>
             <span class="author-block">
-              Songfang Han***<sup>1</sup>,
+              <a href="http://hansf.me/#news">Songfang Han</a>***<sup>1</sup>,
             </span>
             <span class="author-block">
-              Zhiao Huang***<sup>1</sup>,
+              <a href="https://sites.google.com/view/zhiao-huang">Zhiao Huang</a>***<sup>1</sup>,
             </span>
             <span class="author-block">
-              Tongzhou Mu***<sup>1</sup>,
+              <a href="https://cseweb.ucsd.edu//~t3mu/">Tongzhou Mu</a>***<sup>1</sup>,
             </span>
             <span class="author-block">
-              Jing Xu<sup>2</sup>,
+              <a href="https://www.me.tsinghua.edu.cn/en/info/1081/1202.htm">Jing Xu</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              Hao Su<sup>1</sup>
+              <a href="https://cseweb.ucsd.edu/~haosu/">Hao Su</a><sup>1</sup>
             </span>
           </div>
 
@@ -114,6 +118,16 @@
                   <span>Code (dev)</span>
                   </a>
               </span>
+              <!-- Documentation Link. -->
+              <span class="link-block">
+                <a href="https://sapien.ucsd.edu/docs/latest/tutorial/rendering/index.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-lines"></i>
+                  </span>
+                  <span>Documentation</span>
+                  </a>
+              </span>
             </div>
 
           </div>
@@ -127,7 +141,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <div class="columns is-centered">
-        <img src="static/images/teaser.png" width="80%" height="80%">
+        <img src="static/images/teaser.png" width="90%" height="90%">
       </div>
     </div>
   </div>
@@ -156,13 +170,13 @@
 </section>
 
 <section class="section">
-  <div class="container is-widescreen">
+  <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
         <h2 class="title is-3">Pipeline Overview</h2>
         <img src="static/images/pipeline.png" width="100%" height="100%">
         <br><br><br><br>
-        <img src="static/images/framework.png" width="50%" height="50%">
+        <img src="static/images/framework.png" width="80%" height="80%">
       </div>
     </div>
   </div>
@@ -172,19 +186,41 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Fast and Off-The-Shelf Code for Extensive Use</h2>
+        <h2 class="title is-3">Off-The-Shelf Depth Sensor Simulation in SAPIEN</h2>
         <div class="content has-text-justified">
           <p>
-            The pipeline described in this paper has been integrated into the open-sourced library <a href="https://sapien.ucsd.edu/">SAPIEN</a>. SAPIEN
+            The pipeline described in this paper has been integrated into the open-source library <a href="https://sapien.ucsd.edu/">SAPIEN</a>. SAPIEN
             is a high-performance interactive simulation environment. It enables various robotic vision and interaction tasks that require detailed part-level
-            understanding. With SAPIEN, one can easily reproduce the pipeline by calling off-the-shelf functions. You can find a quick tutorial of how to
-            use SAPIEN to simulate realistic depth here: <a href="https://sapien.ucsd.edu/docs/latest/tutorial/rendering/index.html">link</a>. 
+            understanding. In SAPIEN, simulating realistic depth is as simple as a few lines of python code:
+            <pre><code class="python">import sapien.core as sapien
+from sapien.sensor import ActiveLightSensorCUDA
+
+# Initialize simulation engine and renderer
+sim = sapien.Engine()
+renderer = sapien.KuafuRenderer()
+sim.set_renderer(renderer)
+scene = sim.create_scene()
+
+# Set up scene
+...
+
+# Set up sensor
+sensor = ActiveLightSensorCUDA('sensor', renderer, scene, sensor_type='d415')
+sensor.set_pose(...) # Set sensor pose
+
+#Realistic depth simulation
+scene.step()
+scene.update_render()
+sensor.take_picture()
+depth = sensor.get_depth()</code></pre>
+            Most of these modules are highly configurable so that the pipeline can easily adapt to different real-world sensors.
+            You can find a more comprehensive tutorial here: <a href="https://sapien.ucsd.edu/docs/latest/tutorial/rendering/index.html">link</a>. 
           </p>
           <p>
-            The whole pipeline is highly accelerated with GPU. It uses a ray-tracing renderer <a href="https://github.com/jetd1/kuafu">Kuafu</a> as the
-            rendering backend, which can render realistic infrared images at a speed of <b>100+ FPS</b>. It uses <a href="https://github.com/angli66/simsense">SimSense</a>, 
-            another GPU-accelerated module, as the stereo matching backend. SimSense can achieve <b>200+ FPS</b> while common CPU implementation can hardly
-            achieve 1 FPS. All these modules are highly-configurable so that the pipeline can easily adapt to new sensors.
+            The entire pipeline is accelerated with GPU. It uses a ray-tracing renderer <a href="https://github.com/jetd1/kuafu">Kuafu</a> as the
+            rendering backend, which can render realistic RGB/infrared images at a speed of <b>100+ FPS</b>. 
+            It uses <a href="https://github.com/angli66/simsense">SimSense</a>, another GPU-accelerated module, as the stereo matching backend. 
+            SimSense can achieve <b>200+ FPS</b> while common CPU implementation can hardly achieve 1 FPS.
           </p>
         </div>
       </div>
@@ -193,32 +229,32 @@
 </section>
 
 <section class="section">
-  <div class="container is-widescreen">
+  <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Results</h2>
-          <video id="dollyzoom" autoplay controls muted loop playsinline width="65%" height="65%">
+          <video id="dollyzoom" autoplay controls muted loop playsinline width="90%" height="90%">
             <source src="./static/videos/alignment.mp4"
                     type="video/mp4">
           </video>
           <p>
             <em>
-              RGB, infrared, and depth from RealSense D415 (left) v.s. RGB, infrared, and depth generated by our method (right). <br>
-              Note that our method can simulate the error pattern of the real images. We found the existence of such patterns <br>
+              RGB, infrared, and depth from RealSense D415 (left) v.s. RGB, infrared, and depth generated by our method (right). 
+              Note that our method can simulate the error pattern of the real depth sensor. We found the existence of such patterns 
               vital to enhancing sim-to-real performance.
             </em>
           </p>
           <img src="static/images/data_generation.png" width="100%" height="100%">
           <p>
             <em>
-              Qualitative comparison of 6D object pose estimation algorithms on real depth images. The scene is challenging for pose <br>
-              estimation as the depth measurement of real objects (Golden ball, S.Pellegrino) is noisy and incomplete. All the three <br>
-              pose estimation algorithms are able to infer accurate poses while trained solely on the simulated data generated by our <br>
+              Qualitative comparison of 6D object pose estimation algorithms on real depth images. The scene is challenging for pose 
+              estimation as the depth measurement of real objects (Golden ball, S.Pellegrino) is noisy and incomplete. All the three 
+              pose estimation algorithms are able to infer accurate poses while trained solely on the simulated data generated by our 
               method. Note that we use depth maps for the pose estimation and RGB images are only used for better visualization.
             </em>
             <br><br><br>
-            Please refer to the paper if you are interested to see more results.
+            <b>Please refer to the paper if you are interested to see more results.</b>
           </p>
         </div>
       </div>
