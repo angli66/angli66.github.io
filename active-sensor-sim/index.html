@@ -208,7 +208,7 @@ scene = sim.create_scene()
 sensor = ActiveLightSensorCUDA('sensor', renderer, scene, sensor_type='d415')
 sensor.set_pose(...) # Set sensor pose
 
-#Realistic depth simulation
+# Realistic depth simulation
 scene.step()
 scene.update_render()
 sensor.take_picture()
