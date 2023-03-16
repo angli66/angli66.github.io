@@ -212,7 +212,15 @@ sensor = StereoDepthSensor('sensor', scene, sensor_config)
 # Realistic depth simulation
 scene.update_render()
 sensor.take_picture()
-sensor.compute_depth()</code></pre>
+sensor.compute_depth()
+
+# Get depth map as PyTorch GPU Tensor
+depth_dl = sensor.get_depth_dl_tensor()
+depth_tensor = torch.utils.dlpack.from_dlpack(depth_dl).clone()
+
+# Get RGB point cloud as PyTorch GPU Tensor
+rgb_pc_dl = sensor.get_pointcloud_dl_tensor(with_rgb=True)
+rgb_pc_tensor = torch.utils.dlpack.from_dlpack(rgb_pc_dl).clone()</code></pre>
             Modules are highly configurable so that the pipeline can easily adapt to different real-world sensors. For more information please refer to the
             tutorial linked at the top of the webpage.
           </p>
