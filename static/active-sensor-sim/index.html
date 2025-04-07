@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="A physics-grounded active stereo sensor simulation pipeline.">
+  <meta name="keywords" content="physics-grounded, active stereo sensor, sensor simulation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Close the Optical Sensing Domain Gap by Physics-Grounded Active Stereo Sensor Simulation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/3cbbd84a75.js" crossorigin="anonymous"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">Close the Optical Sensing Domain Gap by Physics-Grounded Active
+              Stereo Sensor Simulation</h1>
+            <p>IEEE Transactions on Robotics (T-RO)</p>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://cseweb.ucsd.edu/~haosu/lab/group.html">Xiaoshuai Zhang</a>*<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://cray695.wixsite.com/mysite">Rui Chen</a>*<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://angli66.github.io">Ang Li</a>**<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.fbxiang.com/">Fanbo Xiang</a>**<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://yzqin.github.io/">Yuzhe Qin</a>**<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://cseweb.ucsd.edu/~jigu/">Jiayuan Gu</a>**<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://cseweb.ucsd.edu/~haosu/lab/group.html">Zhan Ling</a>**<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://cseweb.ucsd.edu/~mil070/">Minghua Liu</a>**<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://angli66.github.io/active-sensor-sim/">Peiyu Zeng</a>**<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="http://hansf.me/#news">Songfang Han</a>***<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://sites.google.com/view/zhiao-huang">Zhiao Huang</a>***<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://cseweb.ucsd.edu//~t3mu/">Tongzhou Mu</a>***<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.me.tsinghua.edu.cn/en/info/1081/1202.htm">Jing Xu</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://cseweb.ucsd.edu/~haosu/">Hao Su</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>University of California, San Diego,</span>
+              <span class="author-block"><sup>2</sup>Tsinghua University</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- IEEE Xplore Link. -->
+                <span class="link-block">
+                  <a href="https://ieeexplore.ieee.org/document/10027470"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-ieee"></i>
+                    </span>
+                    <span>IEEE Xplore</span>
+                  </a>
+                </span>
+                <!-- arXiv Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2201.11924" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/haosulab/SAPIEN"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Tutorial Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/haosulab/SAPIEN-tutorial/blob/master/rendering/3_sapien_realistic_depth.ipynb"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-lines"></i>
+                    </span>
+                    <span>Tutorial</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered">
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/4tKRG1Do6HI">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Off-the-Shelf Real-Time Sensor Simulation</h2>
+          <div class="content has-text-justified">
+            <p>
+              The pipeline in this paper has been integrated into the open-source library <a
+                href="https://sapien.ucsd.edu/">SAPIEN</a>. SAPIEN is a
+              high-performance interactive simulation environment. It enables various robotic vision and interaction
+              tasks that require detailed part-level
+              understanding. With SAPIEN, you can easily build the scene, set up the renderer, and accomplish the sensor
+              simulation in <b><font color=red>real time (60+ FPS)</font></b>. All of these are as simple as a few lines of python code:
+            <pre><code class="python">import sapien.core as sapien
+from sapien.sensor import StereoDepthSensor, StereoDepthSensorConfig
+
+# Set up simulation engine and renderer
+sim = sapien.Engine()
+renderer = sapien.SapienRenderer()
+sim.set_renderer(renderer)
+
+# Set up scene
+scene = sim.create_scene()
+
+# Set up sensor
+sensor_config = StereoDepthSensorConfig()
+sensor = StereoDepthSensor('sensor', scene, sensor_config)
+
+# Realistic depth simulation
+scene.update_render()
+sensor.take_picture()
+sensor.compute_depth()
+
+# Get depth map as PyTorch GPU Tensor
+depth_dl = sensor.get_depth_dl_tensor()
+depth_tensor = torch.utils.dlpack.from_dlpack(depth_dl).clone()
+
+# Get RGB point cloud as PyTorch GPU Tensor
+rgb_pc_dl = sensor.get_pointcloud_dl_tensor(with_rgb=True)
+rgb_pc_tensor = torch.utils.dlpack.from_dlpack(rgb_pc_dl).clone()</code></pre>
+            Modules are highly configurable so that the pipeline can easily adapt to different real-world sensors. For
+            more information please refer to the
+            tutorial linked at the top of the webpage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              In this paper, we focus on the simulation of active stereovision depth sensors, which are popular in both
+              academic and industry communities.
+              Inspired by the underlying mechanism of the sensors, we designed a fully physics-grounded simulation
+              pipeline that includes material acquisition,
+              ray-tracingbased infrared (IR) image rendering, IR noise simulation, and depth estimation. The pipeline is
+              able to generate depth maps with
+              material-dependent error patterns similar to a real depth sensor in real time. We conduct real experiments
+              to show that perception algorithms
+              and reinforcement learning policies trained in our simulation platform could transfer well to the
+              realworld test cases without any fine-tuning.
+              Furthermore, due to the high degree of realism of this simulation, our depth sensor simulator can be used
+              as a convenient testbed to evaluate
+              the algorithm performance in the real world, which will largely reduce the human effort in developing
+              robotic algorithms. The entire pipeline has
+              been integrated into the SAPIEN simulator and is open-sourced to promote the research of vision and
+              robotics communities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Pipeline Overview</h2>
+          <img src="static/images/pipeline.png" width="100%" height="100%">
+          <br><br><br><br>
+          <img src="static/images/framework.png" width="80%" height="80%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-3">Results</h2>
+            <video id="dollyzoom" autoplay controls muted loop playsinline width="90%" height="90%">
+              <source src="./static/videos/alignment.mp4" type="video/mp4">
+            </video>
+            <p>
+              <em>
+                RGB, infrared, and depth from RealSense D415 (left) v.s. RGB, infrared, and depth generated by our
+                method (right).
+                Note that our method can simulate the error pattern of the real depth sensor. We found the existence of
+                such patterns
+                vital to enhancing sim-to-real performance.
+              </em>
+            </p>
+            <img src="static/images/data_generation.png" width="100%" height="100%">
+            <p>
+              <em>
+                Qualitative comparison of 6D object pose estimation algorithms on real depth images. The scene is
+                challenging for pose
+                estimation as the depth measurement of real objects (Golden ball, S.Pellegrino) is noisy and incomplete.
+                All the three
+                pose estimation algorithms are able to infer accurate poses while trained solely on the simulated data
+                generated by our
+                method. Note that we use depth maps for the pose estimation and RGB images are only used for better
+                visualization.
+              </em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{10027470,
+ author = {Zhang, Xiaoshuai and Chen, Rui and Li, Ang and Xiang, Fanbo and Qin, Yuzhe and Gu, Jiayuan and Ling, Zhan and Liu, Minghua and Zeng, Peiyu and Han, Songfang and Huang, Zhiao and Mu, Tongzhou and Xu, Jing and Su, Hao},
+ doi = {10.1109/TRO.2023.3235591},
+ journal = {IEEE Transactions on Robotics},
+ keywords = {Stereo vision;Robots;Robot sensing systems;Optical sensors;Solid modeling;Rendering (computer graphics);Lighting;Active stereovision;depth sensor;robot simulation;sensor simulation;sim-to-real},
+ number = {3},
+ pages = {2429-2447},
+ title = {Close the Optical Sensing Domain Gap by Physics-Grounded Active Stereo Sensor Simulation},
+ volume = {39},
+ year = {2023}
+}</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Modified from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a> project page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

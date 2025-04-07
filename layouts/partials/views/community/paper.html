@@ -1,0 +1,80 @@
+{{ $item := .item }}
+
+{{/* Dynamic view adjusts to content type. */}}
+{{ $show_authors_only := or (eq $item.Type "publications") (eq $item.Type "projects") }}
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+{{ if $item.Params.external_link }}
+{{ $link = $item.Params.external_link }}
+{{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
+{{/* Get summary. */}}
+{{ $summary := "" }}
+{{ if $item.Params.summary }}
+{{ $summary = $item.Params.summary | markdownify | emojify }}
+{{ else if $item.Params.abstract }}
+{{ $summary = $item.Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
+{{ else if $item.Summary }}
+{{ $summary = $item.Summary }}
+{{ end }}
+
+<div class="flex flex-col md:flex-row items-center md:items-start gap-8 view-compact mb-5 md:flex-nowrap">
+  <div
+    class="w-[256px] h-[192px] flex-shrink-0 overflow-hidden rounded-md bg-gray-100 dark:bg-gray-800 transition-all hover:scale-105">
+    {{ $resource := partial "functions/get_featured_image.html" $item }}
+    {{ $anchor := $item.Params.image.focal_point | default "Center" }}
+    {{ with $resource }}
+    {{ $image := .Fit (printf "256x192 %s" $anchor) }}
+    {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="relative block h-full">
+      <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}"
+        class="w-full h-full max-w-full max-h-full object-contain" loading="lazy">
+    </a>
+    {{ end }}
+  </div>
+  <div class="flex-1 min-w-0 md:min-w-[150px]">
+    <div class="text-xl font-bold text-black dark:text-white">
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
+        <span
+          class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">
+          {{ $item.Title }}
+          {{if $target}}{{ partial "functions/get_icon" (dict "name" "arrow-top-right-on-square" "attributes"
+          "style=\"height: 1em;\" class=\"inline-flex h-6 w-6 pl-2\"") }}{{end}}
+        </span>
+      </a>
+    </div>
+    {{ with $summary }}
+    <div class="mt-2 text-gray-800 dark:text-gray-300 text-sm">
+      {{ . }}
+    </div>
+    {{ end }}
+    <div class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+      {{ if eq $item.Type "event" }}
+      <span>{{ partial "functions/get_event_dates" $item }}</span>
+      {{ with $item.Params.location }}
+      <span class="mx-1">·</span>
+      <span>{{ . }}</span>
+      {{ end }}
+      {{ end }}
+      {{ if and $show_authors_only $item.Params.authors }}
+      <div>{{ partial "page_metadata_authors" $item }}</div>
+      {{ end }}
+      {{ if not $show_authors_only }}
+      {{ partial "page_metadata" (dict "page" $item "is_list" 1) }}
+      {{ end }}
+      {{ if $item.Params.publication_short }}
+      <span class="text-black dark:text-white">{{ $item.Params.publication_short | markdownify }}</span>
+      {{ end }}
+    </div>
+    {{ if $has_attachments }}
+    <div class="mt-2">
+      <div class="flex flex-wrap gap-2">
+        {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
