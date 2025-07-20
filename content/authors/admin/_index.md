@@ -133,4 +133,4 @@ awards:
 
 ## About Me
 
-I am a Research Engineer at [Hillbot](https://www.hillbot.ai). My research interests include high-fidelity simulation, 3D computer vision, and embodied AI. I work on developing simulation platforms for robotics systems, focusing on realistic rendering and physics modeling that bridge the gap between virtual and physical worlds. I graduated with an M.S. in Computer Science from Stanford University and a B.S. in Computer Science with from UC San Diego, where I was fortunate to be advised by Prof. [Hao Su](https://cseweb.ucsd.edu/~haosu).
+I am a Research Engineer at [Hillbot](https://www.hillbot.ai). My research interests include high-fidelity simulation, 3D computer vision, and embodied AI. I work on developing simulation platforms for robotics systems, focusing on realistic rendering and physics modeling that bridge the gap between virtual and physical worlds. I graduated with an M.S. in Computer Science from Stanford University and a B.S. in Computer Science from UC San Diego, where I was fortunate to be advised by Prof. [Hao Su](https://cseweb.ucsd.edu/~haosu).
