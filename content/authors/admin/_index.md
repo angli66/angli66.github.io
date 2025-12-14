@@ -51,30 +51,33 @@ education:
     date_start: 2023-09-26
     date_end: 2025-04-03
     summary: |
-      Specialized in Artificial Intelligence
+      Specialized in **Artificial Intelligence**
   - area: B.S. Computer Science
     institution: University of California, San Diego
     date_start: 2019-08-05
     date_end: 2022-12-10
     summary: |
-      Graduated with High Honors
+      Graduated with **High Honors**
 work:
-  - position: Research Engineer
+  - position: Robot Simulation Engineer
     company_name: Hillbot
     date_start: 2025-01-27
     date_end:
     summary: |
       Responsibilities include:
-      - Design and optimize high-fidelity simulation platforms for robotics systems, focusing on rendering and physics modeling
+      - Led the design and optimization of the rendering system for the new version of the high-fidelity simulation platform **SAPIEN**, supporting both **rasterization** and **ray tracing** pipelines, with **tile-based GPU optimization** implemented in **Vulkan**.
+      - Designed and implemented a **physically based material system**, featuring **diffuse/specular IBL**, **GGX BRDF/BTDF with material layering**, and **multi-scattering energy compensation** for physical correctness.
+      - Designed and implemented a **Blender-compatible node-based shading system**, enabling flexible material authoring and seamless reuse of Blender workflows.
+      - Implemented rasterization shaders for **Gaussian Splatting**, integrating **point-based neural scene representations** into the real-time rendering pipeline.
   - position: Research Intern
     company_name: Hillbot
     date_start: 2024-07-01
     date_end: 2024-09-20
     summary: |
       Responsibilities include:
-      - Maintain code simulating active stereo depth sensor
-      - Work on improving performance of Vulkan-based rasterization pipelines
-      - Develop rendering system features including infrared light, shadow catcher, reflection probe, geometry instancing, tone mapping, etc.
+      - Maintained a simulation pipeline for **active stereo depth sensors**, supporting realistic depth and infrared signal generation.
+      - Improved the performance of **Vulkan-based rasterization pipelines**, focusing on GPU efficiency and real-time rendering throughput.
+      - Implemented rendering system features including **multiview rendering**, **geometry instancing**, **shadow catchers**, **reflection probes**, and **tone mapping**.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -133,4 +136,4 @@ awards:
 
 ## About Me
 
-I am a Research Engineer at [Hillbot](https://www.hillbot.ai). My research interests include high-fidelity simulation, 3D computer vision, and embodied AI. I work on developing simulation platforms for robotics systems, focusing on realistic rendering and physics modeling that bridge the gap between virtual and physical worlds. I graduated with an M.S. in Computer Science from Stanford University and a B.S. in Computer Science from UC San Diego, where I was fortunate to be advised by Prof. [Hao Su](https://cseweb.ucsd.edu/~haosu).
+I am a Research Engineer at [Hillbot](https://www.hillbot.ai). My research interests include high-fidelity simulation, 3D computer vision, and embodied AI. I work on developing simulation platforms for robotics systems, focusing on realistic rendering and physics modeling that bridge the gap between virtual and physical worlds. I graduated with an M.S. in Computer Science, specialized in Artificial Intelligence, from Stanford University, and a B.S. in Computer Science from UC San Diego, where I was fortunate to be advised by Prof. [Hao Su](https://cseweb.ucsd.edu/~haosu).
