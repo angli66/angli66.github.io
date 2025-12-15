@@ -65,7 +65,7 @@ work:
     date_end:
     summary: |
       Responsibilities include:
-      - Led the design and optimization of the rendering system for the new version of the high-fidelity simulation platform **SAPIEN**, supporting both **rasterization** and **ray tracing** pipelines, with **tile-based GPU optimization** implemented in **Vulkan**.
+      - Led the design and optimization of the rendering system for the new version of the high-fidelity simulation platform **SAPIEN**, supporting both **rasterization** and **ray tracing** pipelines, with **batching rendering optimization** implemented in **Vulkan**.
       - Designed and implemented a **physically based material system**, featuring **diffuse/specular IBL**, **GGX BRDF/BTDF with material layering**, and **multi-scattering energy compensation** for physical correctness.
       - Designed and implemented a **Blender-compatible node-based shading system**, enabling flexible material authoring and seamless reuse of Blender workflows.
       - Implemented rasterization shaders for **Gaussian Splatting**, integrating **point-based neural scene representations** into the real-time rendering pipeline.
