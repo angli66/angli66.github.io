@@ -20,12 +20,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Research Engineer
+role: Senior Algorithm Engineer, Simulation
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Hillbot
-    url: https://hillbot.ai
+  - name: Sudo AI
+    url:
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -59,24 +59,29 @@ education:
     summary: |
       Graduated with **High Honors**
 work:
+  - position: Senior Algorithm Engineer, Simulation
+    company_name: Sudo AI
+    date_start: 2026-02-01
+    date_end:
+    summary: |
+      - Own the rendering engine for a large-scale robotics simulation platform, maintaining core infrastructure for embodied AI development.
+      - Developed a real-time Gaussian radiance-aware foreground tracing pipeline that transfers HDR Gaussian background illumination onto ray-traced foreground objects.
   - position: Robot Simulation Engineer
     company_name: Hillbot
     date_start: 2025-01-27
-    date_end:
+    date_end: 2026-01-31
     summary: |
-      Responsibilities include:
-      - Led the design and optimization of the rendering system for the new version of the high-fidelity simulation platform **SAPIEN**, supporting both **rasterization** and **ray tracing** pipelines, with **batching rendering optimization** implemented in **Vulkan**.
-      - Designed and implemented a **physically based material system**, featuring **diffuse/specular IBL**, **GGX BRDF/BTDF with material layering**, and **multi-scattering energy compensation** for physical correctness.
-      - Designed and implemented a **Blender-compatible node-based shading system**, enabling flexible material authoring and seamless reuse of Blender workflows.
-      - Implemented rasterization shaders for **Gaussian Splatting**, integrating **point-based neural scene representations** into the real-time rendering pipeline.
+      - Led **Vulkan** rendering system development for a large-scale robotics simulation engine, with rasterization and real-time hardware ray tracing optimized for thousands of parallel environments.
+      - Built a production-style **PBR** material system with layered **GGX BRDF/BTDF** and multi-scattering energy compensation.
+      - Built a **Blender-compatible** node-based shading system to reuse artist-authored material graphs in the simulation engine.
+      - Implemented **Gaussian Splatting** rasterization shaders for real-time point-based neural scene rendering.
   - position: Research Intern
     company_name: Hillbot
     date_start: 2024-07-01
     date_end: 2024-09-20
     summary: |
-      Responsibilities include:
-      - Maintained a simulation pipeline for **active stereo depth sensors**, supporting realistic depth and infrared signal generation.
-      - Improved the performance of **Vulkan-based rasterization pipelines**, focusing on GPU efficiency and real-time rendering throughput.
+      - Maintained an **active stereo depth sensor simulation library** for realistic depth and infrared signal generation.
+      - Optimized **Vulkan** rasterization pipelines for GPU efficiency and real-time rendering performance.
       - Implemented rendering system features including **multiview rendering**, **geometry instancing**, **shadow catchers**, **reflection probes**, and **tone mapping**.
 
 # Skills
@@ -136,4 +141,4 @@ awards:
 
 ## About Me
 
-I am a Research Engineer at [Hillbot](https://www.hillbot.ai). My research interests include high-fidelity simulation, 3D computer vision, and embodied AI. I work on developing simulation platforms for robotics systems, focusing on realistic rendering and physics modeling that bridge the gap between virtual and physical worlds. I graduated with an M.S. in Computer Science, specialized in Artificial Intelligence, from Stanford University, and a B.S. in Computer Science from UC San Diego, where I was fortunate to be advised by Prof. [Hao Su](https://cseweb.ucsd.edu/~haosu).
+I am a Senior Algorithm Engineer in simulation at Sudo AI. My work focuses on developing large-scale simulation platforms for robotics and embodied AI, with an emphasis on realistic rendering systems that help bridge the gap between virtual and physical worlds. I graduated with an M.S. in Computer Science, specialized in Artificial Intelligence, from Stanford University, and a B.S. in Computer Science from UC San Diego, where I was fortunate to be advised by Prof. [Hao Su](https://cseweb.ucsd.edu/~haosu).
